@@ -62,8 +62,6 @@ export default function Home() {
 
             <div className="lg:px-20 px-5 bg-top">
                 <div className='container mx-auto'>
-                    <Particle />
-
                     <Menu />
                     <div className="flex flex-col py-12">
 
