@@ -196,7 +196,7 @@ export default function Home() {
 
 
                             <div data-aos="flip-right" className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service1} alt='services' className='flex mx-auto'></img>
+                                <img src={service1} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Private Sale Support
@@ -211,7 +211,7 @@ export default function Home() {
                         <div className='grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-1 justify-center items-start mdLgap-8 gap-6 lg:w-8/12'>
 
                             <div data-aos="flip-right" data-aos-delay='100' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service2} alt='services' className='flex mx-auto'></img>
+                                <img src={service2} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Investor Matching
@@ -223,7 +223,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-left" data-aos-delay='200' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service4} alt='services' className='flex mx-auto'></img>
+                                <img src={service4} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Liquidity Solutions
@@ -235,7 +235,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-right" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service3} alt='services' className='flex mx-auto'></img>
+                                <img src={service3} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Compliance Assistance
@@ -247,7 +247,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-left" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service5} alt='services' className='flex mx-auto'></img>
+                                <img src={service5} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Secure OTC Deals
@@ -289,7 +289,7 @@ export default function Home() {
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center items-start gap-8'>
 
                         <div data-aos="fade-up" className=' md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose1} alt='services' className='flex mx-auto'></img>
+                            <img src={choose1} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Access to Strategic Investors
@@ -301,7 +301,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='100' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose2} alt='services' className='flex mx-auto'></img>
+                            <img src={choose2} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Price Stability
@@ -313,7 +313,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='200' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose3} alt='services' className='flex mx-auto'></img>
+                            <img src={choose3} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Fast and Efficient Transactions
@@ -325,7 +325,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='300' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose4} alt='services' className='flex mx-auto'></img>
+                            <img src={choose4} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Private Transactions
