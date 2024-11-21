@@ -92,6 +92,39 @@ html {
   z-index: -1;
 }
 
+.animate-rotate {
+  animation: shake-rotate 2.5s ease-in-out infinite;
+}
+
+@keyframes shake-rotate {
+  0%, 100% {
+    transform: rotate(0deg); /* Initial state */
+  }
+  10% {
+    transform: rotate(-10deg); /* Shake left */
+  }
+  20% {
+    transform: rotate(10deg); /* Shake right */
+  }
+  30% {
+    transform: rotate(-5deg); /* Shake left */
+  }
+  40% {
+    transform: rotate(5deg); /* Shake right */
+  }
+  50% {
+    transform: rotate(0deg); /* Return to neutral */
+  }
+  70% {
+    transform: rotate(360deg); /* Rotate 360° */
+  }
+  80% {
+    transform: rotate(360deg); /* Hold at 360° */
+  }
+  100% {
+    transform: rotate(360deg); /* Keep 360° until animation resets */
+  }
+}
 
 
 /* ---Sidebar css */

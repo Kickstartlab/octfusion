@@ -44,8 +44,9 @@ export default function Menu() {
 
         <div className="text-3xl text-center pb-8 lg:hidden flex justify-between items-center py-5" onClick={ToggleSidebar} >
 
-          <a href="/" className="">
-            <img src={top} alt="logo" className='w-12' />
+          <a href="/" className="flex items-center gap-x-2">
+            <img src={top} alt="Logo" className='w-10' />
+            <p className='text-lg font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
           </a>
 
           <i className="fa fa-bars"></i>
@@ -54,9 +55,12 @@ export default function Menu() {
         <div className={`sidebar ${isOpen === true ? 'active' : ''}`}>
           <div className='p-5'>
             <div className="flex items-center justify-between" onClick={ToggleSidebar}>
-              <a href="/" className="">
-                <img src={top} alt="logo" className='w-8' />
+
+              <a href="/" className="flex items-center gap-x-2">
+                <img src={top} alt="Logo" className='w-10' />
+                <p className='text-lg font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
               </a>
+
               <i className="fa fa-times text-2xl"></i>
             </div>
 

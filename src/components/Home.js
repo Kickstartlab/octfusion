@@ -108,7 +108,7 @@ export default function Home() {
 
                 </div>
 
-                <svg className='flex mx-auto w-8' width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='flex mx-auto w-8 animate-rotate' width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M32 54L0.823085 -1.7566e-06L63.1769 -7.20775e-06L32 54Z" fill="white" />
                 </svg>
             </div>
