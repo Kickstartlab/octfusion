@@ -17,6 +17,7 @@ import top from '../assets/top.png';
 import Accordion from './Accordion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Particle from './Particle';
 
 
 export default function Home() {
@@ -55,13 +56,18 @@ export default function Home() {
 
             {/* top section */}
 
+            {/* <div className='py-32'>
+                <Background />
+            </div> */}
+
             <div className="lg:px-20 px-5 bg-top">
                 <div className='container mx-auto'>
+                    <Particle />
 
                     <Menu />
                     <div className="flex flex-col py-12">
 
-                        <div data-aos="fade-right" className="lg:w-1/2 lg:mb-0 mb-12 z-20">
+                        <div data-aos="fade-right" data-aos-delay="400" className="lg:w-1/2 lg:mb-0 mb-12 z-20">
                             <h1 className='md:text-5xl text-3xl lg:leading-loose leading-relaxed font-montserat font-extrabold text-white-100 capitalize'>
                                 the future of crypto Connectivity.
                             </h1>
@@ -87,7 +93,7 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos="zoom-in" data-aos-delay="350" className="lg:-mt-52">
+                        <div data-aos="zoom-in" className="lg:-mt-56">
                             <img src={top} alt="Logo" className='flex mx-auto rotate' />
                         </div>
 
@@ -128,17 +134,17 @@ export default function Home() {
                                 </svg>
                             </div>
 
-                            <p className='lg:leading-loose text-white-70'>
+                            <p data-aos="fade-in" data-aos-delay='50' className='lg:leading-loose text-white-70'>
                                 At OTCFusion, we are dedicated to bridging the gap between cryptocurrency projects and strategic investors in the Over-The-Counter (OTC) market. Our mission is to create a trusted, efficient, and secure platform for facilitating high-volume transactions, enabling projects to grow and investors to access exclusive opportunities.
                             </p>
 
-                            <p className='lg:leading-loose text-white-70'>
+                            <p data-aos="fade-in" data-aos-delay='150' className='lg:leading-loose text-white-70'>
                                 With a focus on professionalism and transparency, we provide tailored solutions to meet the unique needs of each project and investor. Whether you're seeking to raise capital, increase liquidity, or connect with long-term partners, OTCFusion is here to simplify the process and deliver results.
                             </p>
                         </div>
 
                         <div className='lg:w-1/2 space-y-8'>
-                            <p className='lg:leading-loose text-white-70'>
+                            <p data-aos="fade-in" data-aos-delay='50' className='lg:leading-loose text-white-70'>
                                 At OTCFusion, we are dedicated to bridging the gap between cryptocurrency projects and strategic investors in the Over-The-Counter (OTC) market. Our mission is to create a trusted, efficient, and secure platform for facilitating high-volume transactions, enabling projects to grow and investors to access exclusive opportunities.
                             </p>
 
@@ -153,7 +159,7 @@ export default function Home() {
 
                             </div>
 
-                            <p className='lg:leading-loose text-white-70'>
+                            <p data-aos="fade-in" data-aos-delay='150' className='lg:leading-loose text-white-70'>
                                 With a focus on professionalism and transparency, we provide tailored solutions to meet the unique needs of each project and investor. Whether you're seeking to raise capital, increase liquidity, or connect with long-term partners, OTCFusion is here to simplify the process and deliver results.
                             </p>
                         </div>
@@ -178,7 +184,7 @@ export default function Home() {
                             </h2>
 
 
-                            <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                            <div data-aos="flip-right" className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
                                 <img src={service1} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
@@ -193,7 +199,7 @@ export default function Home() {
 
                         <div className='grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-1 justify-center items-start mdLgap-8 gap-6 lg:w-8/12'>
 
-                            <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                            <div data-aos="flip-right" data-aos-delay='100' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
                                 <img src={service2} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
@@ -205,7 +211,7 @@ export default function Home() {
                                 </p>
                             </div>
 
-                            <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                            <div data-aos="flip-left" data-aos-delay='200' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
                                 <img src={service4} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
@@ -217,7 +223,7 @@ export default function Home() {
                                 </p>
                             </div>
 
-                            <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                            <div data-aos="flip-right" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
                                 <img src={service3} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
@@ -229,7 +235,7 @@ export default function Home() {
                                 </p>
                             </div>
 
-                            <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                            <div data-aos="flip-left" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
                                 <img src={service5} alt='services'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
@@ -268,7 +274,7 @@ export default function Home() {
 
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center items-start gap-8'>
 
-                        <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                        <div data-aos="fade-up" className=' md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
                             <img src={choose1} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
@@ -280,7 +286,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                        <div data-aos="fade-up" data-aos-delay='100' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
                             <img src={choose2} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
@@ -292,7 +298,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                        <div data-aos="fade-up" data-aos-delay='200' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
                             <img src={choose3} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
@@ -304,7 +310,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className='border-2 border-white-50 rounded-xl md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
+                        <div data-aos="fade-up" data-aos-delay='300' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
                             <img src={choose4} alt='services'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
@@ -358,7 +364,7 @@ export default function Home() {
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 flex flex-col mx-auto'>
-                        <div data-aos="zoom-in" data-aos-delay="350" className="accordion space-y-5 py-12">
+                        <div data-aos-delay="350" className="accordion space-y-5 py-12">
                             {accordionData.map(({ title, content }) => (
                                 <Accordion title={title} content={content} />
                             ))}

@@ -7,77 +7,74 @@ import top from '../assets/top.png';
 
 export default function Menu() {
 
-  const [show, setShow] = useState(false);
+  const [isOpen, setIsopen] = useState(false);
+
+  const ToggleSidebar = () => {
+    isOpen === true ? setIsopen(false) : setIsopen(true);
+  }
 
 
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins text-white-100 h-28">
-        <a href="/" className="flex items-center gap-x-2">
-          <img src={top} alt="Logo" className='w-12' />
-          <p className='text-2xl font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
-        </a>
 
-        <nav>
-          <ul className="text-md flex justify-center gap-8 items-center text-white-70">
-            <li><a href="#about" className="text-zinc-100">About Us</a></li>
-            <li><a href="#services" className=" cursor-pointer">Our Services</a></li>
-            <li><a href="#clients" className="cursor-pointer">Our Clients</a></li>
-            <li><a href="#contact" className="cursor-pointer">Contact us</a></li>
-          </ul>
-        </nav>
 
-        <a href="/">
-          <button className="rounded-2xl btn-gradient px-8 py-3">
-            Get In Touch
-          </button>
-        </a>
-      </div>
+      <div className=''>
 
-      <div className="lg:hidden flex items-center justify-between pt-5 font-russo">
-        <a href="/" className="text-white-100">
-          <img src={logo} alt="Logo" />
-        </a>
+        <div className="lg:flex hidden items-center justify-between font-poppins text-white-100 h-28">
+          <a href="/" className="flex items-center gap-x-2">
+            <img src={top} alt="Logo" className='w-12' />
+            <p className='text-2xl font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
+          </a>
 
-        <button onClick={() => setShow(!show)} className="nav cursor-pointer">
+          <nav>
+            <ul className="text-md flex justify-center gap-8 items-center text-white-70">
+              <li><a href="#about" className="text-zinc-100">About Us</a></li>
+              <li><a href="#services" className=" cursor-pointer">Our Services</a></li>
+              <li><a href="#clients" className="cursor-pointer">Our Clients</a></li>
+              <li><a href="#contact" className="cursor-pointer">Contact us</a></li>
+            </ul>
+          </nav>
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white-100">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-          </svg>
+          <a href="/">
+            <button className="rounded-2xl btn-gradient px-8 py-3">
+              Get In Touch
+            </button>
+          </a>
+        </div>
 
-        </button>
-      </div>
+        <div className="text-3xl text-center pb-8 lg:hidden flex justify-between items-center py-5" onClick={ToggleSidebar} >
 
-      {
-        show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-russo font-semibold bg-yellow-100 z-20" style={{ left: "0" }}>
+          <a href="/" className="">
+            <img src={top} alt="logo" className='w-12' />
+          </a>
 
-          <div className="mt-3 px-3 mb-12">
-            <a href="/" className="text-white-100">
-              <img src={logo} alt="Logo" />
-            </a>
+          <i className="fa fa-bars"></i>
+        </div>
+
+        <div className={`sidebar ${isOpen === true ? 'active' : ''}`}>
+          <div className='p-5'>
+            <div className="flex items-center justify-between" onClick={ToggleSidebar}>
+              <a href="/" className="">
+                <img src={top} alt="logo" className='w-8' />
+              </a>
+              <i className="fa fa-times text-2xl"></i>
+            </div>
+
+            <div className="sd-body mt-24">
+              <ul className='space-y-12'>
+                <li><a onClick={ToggleSidebar} href="#about" className="text-zinc-100">About Us</a></li>
+                <li><a onClick={ToggleSidebar} href="#services" className=" cursor-pointer">Our Services</a></li>
+                <li><a onClick={ToggleSidebar} href="#clients" className="cursor-pointer">Our Clients</a></li>
+                <li><a onClick={ToggleSidebar} href="#contact" className="cursor-pointer">Contact us</a></li>
+              </ul>
+            </div>
+
           </div>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer  text-white-100">
-            <a href="/" className="text-lg ml-4 font-semibold">Home</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 text-white-100">
-            <a href="#about" className="text-lg ml-4 font-semibold">About</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#achievement" className="text-lg ml-4 font-semibold">Achievement</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#play" className="text-lg ml-4 font-semibold">Play</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#conclusion" className="text-lg ml-4 font-semibold">Conclusion</a>
-          </button>
-          <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="#faq" className="text-lg ml-4 font-semibold">FAQ</a>
-          </button>
-        </div> : null
-      }
+        </div>
+      </div>
 
+      <div className={`sidebar-overlay ${isOpen === true ? 'active' : ''}`} onClick={ToggleSidebar}></div>
 
     </header >
   )
