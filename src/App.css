@@ -1,0 +1,39 @@
+
+
+.bg-gradient {
+  background: linear-gradient(90deg, #3DBFBB 0%, #8635BD 100%);
+}
+
+.bg-top {
+  background-image: url(./assets/bg-top.png);
+  /* background-position: center;  */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+.border-gradient {
+  border-image: linear-gradient(90deg, #3DBFBB 0%, #8635BD 100%);
+  border-image-slice: 1;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: initial;
+}
+
+.btn-gradient{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 2.94%, #667279 100%);
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
