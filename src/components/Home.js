@@ -14,6 +14,7 @@ import client1 from '../assets/client1.png';
 import client2 from '../assets/client2.png';
 import client3 from '../assets/client3.png';
 import top from '../assets/top.png';
+
 import Accordion from './Accordion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -60,9 +61,18 @@ export default function Home() {
                 <Background />
             </div> */}
 
-            <div className="lg:px-20 px-5 bg-top">
+            <Particle />
+
+            <div className='w-80 h-80 rounded-tl-none rounded-full bg-blue-100 opacity-30 blur-3xl brightness-90 absolute top-0 left-0'>
+            </div>
+
+            <div className="lg:px-20 px-5 bg-top relative z-20">
                 <div className='container mx-auto'>
                     <Menu />
+
+                    <div className='w-96 h-96 rounded-r-none rounded-full bg-blue-50 opacity-30 blur-3xl brightness-75 absolute right-0 mt-44'>
+                    </div>
+
                     <div className="flex flex-col py-12">
 
                         <div data-aos="fade-right" data-aos-delay="400" className="lg:w-1/2 lg:mb-0 mb-12 z-20">
@@ -116,7 +126,7 @@ export default function Home() {
 
             {/* about us section */}
 
-            <div id='about' className="lg:px-20 px-5 lg:py-20 py-6">
+            <div id='about' className="lg:px-20 px-5 lg:py-20 py-6 relative z-20">
                 <div className='container mx-auto'>
 
                     <div className="lg:flex block justify-between items-start gap-x-28 lg:space-y-0 space-y-8">
@@ -128,7 +138,7 @@ export default function Home() {
                                 </h2>
 
                                 <svg width="192" height="8" viewBox="0 0 192 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 5.62219C63.8333 -0.377808 151.5 2.12219 189.5 5.62221" stroke="white" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M2 5.62219C63.8333 -0.377808 151.5 2.12219 189.5 5.62221" stroke="white" strokeWidth="4" stroke-linecap="round" />
                                 </svg>
                             </div>
 
@@ -152,7 +162,7 @@ export default function Home() {
                                 </h3>
 
                                 <svg width="139" height="17" viewBox="0 0 139 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 15C2 15 6.46296 2 15.7328 2C25.0026 2 29.7388 15 39.0086 15C48.2784 15 53.0147 2 62.2845 2C71.5543 2 76.2905 15 85.5603 15C94.8302 15 93.4741 2 108.836 2C124.198 2 137 10.2105 137 10.2105" stroke="white" stroke-width="4" stroke-linecap="round" />
+                                    <path d="M2 15C2 15 6.46296 2 15.7328 2C25.0026 2 29.7388 15 39.0086 15C48.2784 15 53.0147 2 62.2845 2C71.5543 2 76.2905 15 85.5603 15C94.8302 15 93.4741 2 108.836 2C124.198 2 137 10.2105 137 10.2105" stroke="white" strokeWidth="4" stroke-linecap="round" />
                                 </svg>
 
                             </div>
@@ -168,11 +178,14 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className='w-80 h-80 rounded-l-none rounded-full bg-blue-100 opacity-30 blur-3xl brightness-90 absolute left-0 -mt-32'>
+            </div>
+
             {/* services section */}
 
-            <div id='services' className="">
+            <div id='services' className="relative z-20">
 
-                <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
+                <div className="py-6 lg:px-20 px-5 container mx-auto">
 
                     <div className='lg:flex items-center gap-8 lg:space-y-0 space-y-6'>
                         <div className='lg:w-4/12 space-y-12'>
@@ -256,7 +269,10 @@ export default function Home() {
 
             {/* why choose us */}
 
-            <div id='choose' className="">
+            <div className='w-96 h-96 rounded-r-none rounded-full bg-blue-50 opacity-30 blur-3xl brightness-90 absolute right-0 mt-24'>
+            </div>
+
+            <div id='choose' className="relative z-20">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
@@ -327,7 +343,7 @@ export default function Home() {
 
             {/* our clients section */}
 
-            <div id='clients' className="">
+            <div id='clients' className="relative z-20">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
@@ -346,9 +362,12 @@ export default function Home() {
 
             </div>
 
+            <div className='w-80 h-80 rounded-l-none rounded-full bg-black-50 opacity-30 blur-3xl brightness-75 absolute left-0 -mt-56'>
+            </div>
+
             {/* faq section */}
 
-            <div id='faq' className="">
+            <div id='faq' className="relative z-20">
                 <div className="lg:px-20 px-5 lg:py-20 py-6 container mx-auto">
 
                     <div className='space-y-6 text-center lg:pb-20 pb-6'>
@@ -359,6 +378,9 @@ export default function Home() {
                         <p className='text-white-70'>
                             Join the industry leaders to discuss where the markets are heading. We accept token payments.
                         </p>
+                    </div>
+
+                    <div className='w-64 h-80 rounded-r-none rounded-full bg-black-50 opacity-30 blur-3xl brightness-75 absolute right-0 mt-24'>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 flex flex-col mx-auto'>

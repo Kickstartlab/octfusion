@@ -38,6 +38,40 @@ html {
   }
 }
 
+.circle{
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 2.94%, #667279 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: -60px; /* Start above the screen */
+  animation: moveDown 6s ease-in-out infinite;
+}
+
+.circle:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  left: 50%;
+  animation-delay: 1s;
+}
+
+.circle:nth-child(3) {
+  left: 80%;
+  animation-delay: 2s;
+}
+
+@keyframes moveDown {
+  0% {
+    top: -60px; /* Start above the screen */
+  }
+  100% {
+    top: 100vh; /* Move to the bottom of the screen */
+  }
+}
+
 .animate-border {
   display: grid;
   place-content: center;
