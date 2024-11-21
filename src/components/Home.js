@@ -138,7 +138,7 @@ export default function Home() {
                                 </h2>
 
                                 <svg width="192" height="8" viewBox="0 0 192 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 5.62219C63.8333 -0.377808 151.5 2.12219 189.5 5.62221" stroke="white" strokeWidth="4" stroke-linecap="round" />
+                                    <path d="M2 5.62219C63.8333 -0.377808 151.5 2.12219 189.5 5.62221" stroke="white" strokeWidth="4" strokeLinecap="round" />
                                 </svg>
                             </div>
 
@@ -162,7 +162,7 @@ export default function Home() {
                                 </h3>
 
                                 <svg width="139" height="17" viewBox="0 0 139 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 15C2 15 6.46296 2 15.7328 2C25.0026 2 29.7388 15 39.0086 15C48.2784 15 53.0147 2 62.2845 2C71.5543 2 76.2905 15 85.5603 15C94.8302 15 93.4741 2 108.836 2C124.198 2 137 10.2105 137 10.2105" stroke="white" strokeWidth="4" stroke-linecap="round" />
+                                    <path d="M2 15C2 15 6.46296 2 15.7328 2C25.0026 2 29.7388 15 39.0086 15C48.2784 15 53.0147 2 62.2845 2C71.5543 2 76.2905 15 85.5603 15C94.8302 15 93.4741 2 108.836 2C124.198 2 137 10.2105 137 10.2105" stroke="white" strokeWidth="4" strokeLinecap="round" />
                                 </svg>
 
                             </div>
@@ -196,7 +196,7 @@ export default function Home() {
 
 
                             <div data-aos="flip-right" className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service1} alt='services'></img>
+                                <img src={service1} alt='services' className='flex mx-auto'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Private Sale Support
@@ -211,7 +211,7 @@ export default function Home() {
                         <div className='grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-2 grid-rows-1 justify-center items-start mdLgap-8 gap-6 lg:w-8/12'>
 
                             <div data-aos="flip-right" data-aos-delay='100' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service2} alt='services'></img>
+                                <img src={service2} alt='services' className='flex mx-auto'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Investor Matching
@@ -223,7 +223,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-left" data-aos-delay='200' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service4} alt='services'></img>
+                                <img src={service4} alt='services' className='flex mx-auto'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Liquidity Solutions
@@ -235,7 +235,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-right" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service3} alt='services'></img>
+                                <img src={service3} alt='services' className='flex mx-auto'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Compliance Assistance
@@ -247,7 +247,7 @@ export default function Home() {
                             </div>
 
                             <div data-aos="flip-left" data-aos-delay='250' className='animate-border md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5'>
-                                <img src={service5} alt='services'></img>
+                                <img src={service5} alt='services' className='flex mx-auto'></img>
 
                                 <h5 className='md:text-xl text-lg font-semibold'>
                                     Secure OTC Deals
@@ -289,7 +289,7 @@ export default function Home() {
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center items-start gap-8'>
 
                         <div data-aos="fade-up" className=' md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose1} alt='services'></img>
+                            <img src={choose1} alt='services' className='flex mx-auto'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Access to Strategic Investors
@@ -301,7 +301,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='100' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose2} alt='services'></img>
+                            <img src={choose2} alt='services' className='flex mx-auto'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Price Stability
@@ -313,7 +313,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='200' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose3} alt='services'></img>
+                            <img src={choose3} alt='services' className='flex mx-auto'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Fast and Efficient Transactions
@@ -325,7 +325,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="fade-up" data-aos-delay='300' className='md:p-8 p-5 flex flex-col items-center justify-center text-center gap-y-5 animate-border'>
-                            <img src={choose4} alt='services'></img>
+                            <img src={choose4} alt='services' className='flex mx-auto'></img>
 
                             <h5 className='md:text-xl text-lg font-semibold'>
                                 Private Transactions
