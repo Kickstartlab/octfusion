@@ -31,7 +31,7 @@ export default function Menu() {
               <li><a href="#about" className="text-zinc-100">About Us</a></li>
               <li><a href="#services" className=" cursor-pointer">Our Services</a></li>
               <li><a href="#clients" className="cursor-pointer">Our Clients</a></li>
-              <li><a href="#contact" className="cursor-pointer">Contact us</a></li>
+              <li><a href="http://t.me/Thorotcfusion" className="cursor-pointer">Contact us</a></li>
             </ul>
           </nav>
 
@@ -69,7 +69,7 @@ export default function Menu() {
                 <li><a onClick={ToggleSidebar} href="#about" className="text-zinc-100">About Us</a></li>
                 <li><a onClick={ToggleSidebar} href="#services" className=" cursor-pointer">Our Services</a></li>
                 <li><a onClick={ToggleSidebar} href="#clients" className="cursor-pointer">Our Clients</a></li>
-                <li><a onClick={ToggleSidebar} href="#contact" className="cursor-pointer">Contact us</a></li>
+                <li><a onClick={ToggleSidebar} href="http://t.me/Thorotcfusion" className="cursor-pointer">Contact us</a></li>
               </ul>
             </div>
 
