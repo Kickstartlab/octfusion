@@ -23,7 +23,7 @@ export default function Menu() {
         <div className="lg:flex hidden items-center justify-between font-poppins text-white-100 h-28">
           <a href="/" className="flex items-center gap-x-2">
             <img src={top} alt="Logo" className='w-12' />
-            <p className='text-2xl font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
+            <p className='text-2xl font-semibold'><span className='font-extrabold'>OTC</span>Fusion</p>
           </a>
 
           <nav>
@@ -46,7 +46,7 @@ export default function Menu() {
 
           <a href="/" className="flex items-center gap-x-2">
             <img src={top} alt="Logo" className='w-10' />
-            <p className='text-lg font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
+            <p className='text-lg font-semibold'><span className='font-extrabold'>OTC</span>Fusion</p>
           </a>
 
           <i className="fa fa-bars"></i>
@@ -58,7 +58,7 @@ export default function Menu() {
 
               <a href="/" className="flex items-center gap-x-2">
                 <img src={top} alt="Logo" className='w-10' />
-                <p className='text-lg font-semibold'><span className='font-extrabold'>OCT</span>Fusion</p>
+                <p className='text-lg font-semibold'><span className='font-extrabold'>OTC</span>Fusion</p>
               </a>
 
               <i className="fa fa-times text-2xl"></i>
