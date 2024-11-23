@@ -86,7 +86,7 @@ export default function Home() {
 
                             <div className="flex items-center gap-8 font-montserat">
 
-                                <a href="/">
+                                <a href="http://t.me/Thorotcfusion">
                                     <button className="rounded-2xl btn-gradient px-5 py-3 font-semibold">
                                         Contact Us
                                     </button>
